@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/190/190708.png" type="image/x-icon">
   <!-- CSS only -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   <!-- JavaScript Bundle with Popper -->
@@ -17,45 +18,48 @@
 <body>
    <body class="body">
    <h1 id="title">Calculadora JS</h1>
-     <div class="btn-theme">
+     <div id="btn-theme">
       <button id="light">Tema claro</button>
       <button id="dark">Tema escuro</button>
       <button id="historico">Consultar histórico</button>       
      </div>
-     <div class="mainBtn">
+     <div id="mainBtn">
+      <div id="span">
         <input type="text" id="calculos" disabled="on">
-       <div class="colunas">   
+        <button id="apagar">⌫</button>
+      </div>
+        <div id="input"></div>
+       <div class="colunas" id="coluna1">   
         <button class="Btnbg" id="clear">C</button>
-        <button class="Btnbg" id="abreParentese" value="(">(</button>
-        <button class="Btnbg" id="fechaParentese" value=")">)</button>
-        <button class="Btnbg" id="divisao" value="/">÷</button>
+        <button class="Btnbg" id="abreParentese" data-abre1="(" value=" ( ">(</button>
+        <button class="Btnbg" id="fechaParentese" data-fecha1=")" value=" ) ">)</button>
+        <button class="Btnbg" id="divisao" data-divisaum=" ÷ " value=" / ">÷</button>
       </div>     
-        <div class="colunas">
-        <button class="Btnbg" id="7" value="7">7</button>
-        <button class="Btnbg" id="8" value="8">8</button>
-        <button class="Btnbg" id="9" value="9">9</button>
-        <button class="Btnbg" id="multi" value="*">x</button>
+        <div class="colunas" id="coluna2">
+        <button class="Btnbg" id="7" data-sete="7" value="7">7</button>
+        <button class="Btnbg" id="8" data-oito="8" value="8">8</button>
+        <button class="Btnbg" id="9" data-nove="9" value="9">9</button>
+        <button class="Btnbg" id="multi" data-multi=" x " value=" * ">x</button>
       </div>
-        <div class="colunas">
-        <button class="Btnbg" id="4" value="4">4</button>
-        <button class="Btnbg" id="5" value="5">5</button>
-        <button class="Btnbg" id="6" value="6">6</button>
-        <button class="Btnbg" id="sub" value="-">-</button>
+        <div class="colunas" id="coluna3">
+        <button class="Btnbg" id="4" data-quatro="4" value="4">4</button>
+        <button class="Btnbg" id="5" data-cinco="5" value="5">5</button>
+        <button class="Btnbg" id="6" data-seis="6" value="6">6</button>
+        <button class="Btnbg" id="sub" data-sub=" - " value=" - ">-</button>
       </div>
-        <div class="colunas">
-        <button class="Btnbg" id="1" value="1">1</button>
-        <button class="Btnbg" id="2" value="2">2</button>
-        <button class="Btnbg" id="3" value="3">3</button>
-        <button class="Btnbg" id="soma" value="+">+</button>
+        <div class="colunas" id="coluna4">
+        <button class="Btnbg" id="1" data-um="1" value="1">1</button>
+        <button class="Btnbg" id="2" data-dois="2" value="2">2</button>
+        <button class="Btnbg" id="3" data-tres="3" value="3">3</button>
+        <button class="Btnbg" id="soma" data-soma=" + " value=" + ">+</button>
         </div>
-       <div class="colunas">
-        <button class="Btnbg" id="resto" value="%">mod</button>
-        <button class="Btnbg" id="0" value="0">0</button>
-        <button class="Btnbg" id="virgula" value=".">,</button>
-        <button class="Btnbg" id="igual">=</button>   
-        <br>
-        <p id="copy">Feito por &copy; Ghabriel Elias</p>   
+       <div class="colunas" id="coluna5">
+        <button class="Btnbg" id="porcentagem" data-porcent="%x " value=" % ">%</button>
+        <button class="Btnbg" id="0" data-zero="0" value="0">0</button>
+        <button class="Btnbg" id="virgula" data-virgula="." value=".">,</button>
+        <button class="Btnbg" id="igual">=</button>  
        </div>
+       <p id="copy">Feito por &copy; Ghabriel Elias</p> 
       </div>
    </body>
 </body>
