@@ -8,8 +8,57 @@
   width: 100%;
   background-color: #05041d;
 }
+#title{
+  margin-bottom: 15px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  transition: all 0.5s;
+}
 #btn-theme{
   text-align: center;
+  margin-bottom: 10px;
+}
+.buttonTheme{
+  background-color: #ffffff;
+  color: #000000;
+  border: 2px solid transparent;
+  border-radius: 15px;
+}
+.buttonTheme:hover{
+  background-color: black;
+  color: white;
+  transition: 0.3s;
+}
+#mainBtn{
+  font-size: 25px;
+  min-width: 100%;
+  height: 83vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px 0px;
+}
+#calculos{
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 400;
+  text-align: end;
+  border: none;
+  height: 8vh;
+  width: 62vh;
+}
+#apagar{
+  border: 3px solid black;
+  background-color: #201f1f;
+  color: white;
+  font-size: 15px;
+  padding: 0px;
+  height: 8vh;
+  width: 7vh;
+  border-radius: 10px;
 }
 #inputHistoric{
   resize: none;
@@ -24,65 +73,20 @@
   justify-content: center;
   align-items: center;
 }
-#historico{
+.Btnbg{
+  border: 3px solid black;
   background-color: #201f1f;
   color: white;
-  border: 2px solid transparent;
-  border-radius: 15px;
-}
-#historico:hover{
-  background-color: transparent;
-  color: white;
-  transition: 0.3s;
-}
-#light{
-  background-color: white;
-  color: black;
-  border: 2px solid transparent;
-  border-radius: 15px;
-}
-#light:hover{
-  background-color: transparent;
-  color: white;
-  transition: 0.2s;
-}
-#dark{
-  background-color: black;
-  color:  white;
-  border: 2px solid transparent ;
-  border-radius: 15px;
-}
-#dark:hover{ 
-  background-color: transparent;
-  color: white;
-  transition: 0.3s;
-}
-#calculos{
-  background-color: transparent;
-  color: #ffffff;
-  font-size: 30px;
-  font-weight: 400;
-  text-align: end;
-  border: none;
-  height: 8vh;
-  width: 62vh;
-}
-#mainBtn{
-  font-size: 25px;
-  min-width: 100%;
-  height: 85vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 10px 0px;
-}
-#title{
-  margin-bottom: 15px;
-  width: 100%;
   text-align: center;
-  color: white;
-  transition: all 0.5s;
+  padding: 0px;
+  margin: 2px;
+  height: 11vh;
+  width: 15vh;
+  border-radius: 35px;
+}
+.Btnbg:hover{
+  transition: 0.3s;
+  background-color: black;
 }
 #clear{
   background-color: #949494;
@@ -129,20 +133,20 @@
   background-color: white;
   color: black;
 }
-#soma{
-  color: white;
-  background-color: orange;
-}
-#soma:hover{
-  transition: 0.2s;
-  background-color: white;
-  color: black;
-}
 #sub{
   color: white;
   background-color: orange;
 }
 #sub:hover{
+  transition: 0.2s;
+  background-color: white;
+  color: black;
+}
+#soma{
+  color: white;
+  background-color: orange;
+}
+#soma:hover{
   transition: 0.2s;
   background-color: white;
   color: black;
@@ -156,31 +160,6 @@
   background-color: white;
   color: black;
 }
-#apagar{
-  border: 3px solid black;
-  background-color: #201f1f;
-  color: white;
-  font-size: 15px;
-  padding: 0px;
-  height: 8vh;
-  width: 7vh;
-  border-radius: 10px;
-}
-.Btnbg{
-  border: 3px solid black;
-  background-color: #201f1f;
-  color: white;
-  text-align: center;
-  padding: 0px;
-  margin: 2px;
-  height: 11vh;
-  width: 15vh;
-  border-radius: 35px;
-}
-.Btnbg:hover{
-  transition: 0.3s;
-  background-color: black;
-}
 #copy{
   margin-top: 8px;
   text-align: center;
@@ -193,12 +172,12 @@
   .mainBtn{
     font-size: 15px ;
   }
+  #calculos{
+    width: 32vh;
+  }
   .Btnbg{
     font-size: 15px;
     height: 10vh;
     width: 8vh;
-  }
-  #calculos{
-    width: 32vh;
   }
 }

@@ -198,6 +198,7 @@ apagar.addEventListener('click', function(){
 
 let consultar = ""
 const objeto = {}
+
 const div = document.getElementById('input')
 const botHistorico = document.getElementById('historico')
 const divBtn = document.getElementById('btn-theme')
@@ -243,7 +244,7 @@ botHistorico.addEventListener('click', function(){
   
   const voltar = document.createElement('button')
   voltar.innerText = 'Voltar para a calculadora'
-  voltar.id = 'historico'
+  voltar.className = 'buttonTheme'
   divBtn.appendChild(voltar)
 
   voltar.addEventListener('click', function(){
