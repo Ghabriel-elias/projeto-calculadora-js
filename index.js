@@ -190,9 +190,10 @@ const apagar = document.getElementById('apagar')
 apagar.addEventListener('click', function(){
  
   if(calculos.value.length){
+    data = calculos.value
     calculos.value = calculos.value.substr(0, calculos.value.length -1);
-    data = data.substr(0, data.length -1);
-    calculos.focus();
+    data = data.substring(0, data.length - 1)
+    console.log(data)
  }
 })
 
