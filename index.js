@@ -27,6 +27,7 @@ const calculos = document.getElementById('calculos')
 const abre = document.getElementById('abreParentese')
 
 abre.addEventListener('click', function(){
+  error()
   calculos.value += abre.value
   data += abre.value
 })
@@ -34,6 +35,7 @@ abre.addEventListener('click', function(){
 const fecha = document.getElementById('fechaParentese')
 
 fecha.addEventListener('click', function(){
+  error()
   calculos.value += fecha.value
   data += fecha.value
 })
@@ -41,6 +43,7 @@ fecha.addEventListener('click', function(){
 const divisao = document.getElementById('divisao')
 
 divisao.addEventListener('click', function(){
+  error()
     calculos.value += divisao.dataset.divisaum;
     data += divisao.value
 })
@@ -48,6 +51,7 @@ divisao.addEventListener('click', function(){
 const sete = document.getElementById('7')
 
 sete.addEventListener('click', function(){
+  error()
   calculos.value += sete.value
   data += sete.value
 })
@@ -55,6 +59,7 @@ sete.addEventListener('click', function(){
 const oito = document.getElementById('8')
 
 oito.addEventListener('click', function(){
+  error()
   calculos.value += oito.value
   data += oito.value
 })
@@ -62,6 +67,7 @@ oito.addEventListener('click', function(){
 const nove = document.getElementById('9')
 
 nove.addEventListener('click', function(){
+  error()
   calculos.value += nove.value
   data += nove.value
 })
@@ -69,6 +75,7 @@ nove.addEventListener('click', function(){
 const multi = document.getElementById('multi')
 
 multi.addEventListener('click', function(){
+  error()
   calculos.value += multi.dataset.multi
   data += multi.value
 })
@@ -76,6 +83,7 @@ multi.addEventListener('click', function(){
 const quatro = document.getElementById('4')
 
 quatro.addEventListener('click', function(){
+  error()
   calculos.value += quatro.value
   data += quatro.value
 })
@@ -83,6 +91,7 @@ quatro.addEventListener('click', function(){
 const cinco = document.getElementById('5')
 
 cinco.addEventListener('click', function(){
+  error()
   calculos.value += cinco.value
   data += cinco.value
 })
@@ -90,6 +99,7 @@ cinco.addEventListener('click', function(){
 const seis = document.getElementById('6')
 
 seis.addEventListener('click', function(){
+  error()
   calculos.value += seis.value
   data += seis.value
 })
@@ -97,6 +107,7 @@ seis.addEventListener('click', function(){
 const sub = document.getElementById('sub')
 
 sub.addEventListener('click', function(){
+  error()
   calculos.value += sub.value
   data += sub.value
 })
@@ -104,6 +115,7 @@ sub.addEventListener('click', function(){
 const um = document.getElementById('1')
 
 um.addEventListener('click', function(){
+  error()
   calculos.value += um.value
   data += um.value
 })
@@ -111,6 +123,7 @@ um.addEventListener('click', function(){
 const dois = document.getElementById('2')
 
 dois.addEventListener('click', function(){
+  error()
   calculos.value += dois.value
   data += dois.value
 })
@@ -118,6 +131,7 @@ dois.addEventListener('click', function(){
 const tres = document.getElementById('3')
 
 tres.addEventListener('click', function(){
+  error()
   calculos.value += tres.value
   data += tres.value
 })
@@ -125,6 +139,7 @@ tres.addEventListener('click', function(){
 const soma = document.getElementById('soma')
 
 soma.addEventListener('click', function(){
+  error()
   calculos.value += soma.value
   data += soma.value
 })
@@ -133,6 +148,7 @@ const porcentagem = document.getElementById('porcentagem')
 let condicao = ""
 
 porcentagem.addEventListener('click', function(){
+  error()
   condicao = "true" 
   calculos.value += porcentagem.dataset.porcent
   data += multi.value
@@ -141,6 +157,7 @@ porcentagem.addEventListener('click', function(){
 const zero = document.getElementById('0')
 
 zero.addEventListener('click', function(){
+  error()
   calculos.value += zero.value
   data += zero.value
 })
@@ -148,6 +165,7 @@ zero.addEventListener('click', function(){
 const virgula = document.getElementById('virgula')
 
 virgula.addEventListener('click', function(){
+  error()
   calculos.value += virgula.value
   data += virgula.value
 })
@@ -155,8 +173,15 @@ virgula.addEventListener('click', function(){
 const igual = document.getElementById('igual')
 let resultado = ''
 
-igual.addEventListener('click', function(){
+function error(){
+  if(calculos.value == 'ERROR'){
+    calculos.value = ''
+    data = ''
+  }
+}
 
+igual.addEventListener('click', function(){
+  error()
   if(condicao == "true"){
     const porcent = eval(data)
     console.log(porcent)

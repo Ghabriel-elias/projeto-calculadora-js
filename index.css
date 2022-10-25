@@ -169,15 +169,48 @@
   color: white;
   transition: all 0.3s;
 }
-
-@media(max-width: 450px){
+@media(max-width: 646px){
   #calculos{
-    width: 32vh;
+    width: 55vh;
   }
   .Btnbg{
     border-radius: 65px;
     font-size: 25px;
-    height: 9vh;
+    height: 12vh;
+    width: 12vh;
+  }
+  #apagar{
+    font-size: 13px;
+    height: 7vh;
+    width: 6vh;
+  }
+}
+@media(max-width: 570px){
+  #calculos{
+    width: 45vh;
+  }
+}
+@media(max-width: 476px){
+  #calculos{
+    width: 32vh;
+  }
+  .Btnbg{
+    height: 10vh;
     width: 10vh;
+  }
+}
+@media(max-width: 404px){
+  .Btnbg{
+    height: 8vh;
+    width: 8vh;
+  }
+}
+@media(max-width: 350px){
+  #calculos{
+    width: 25vh;
+  }
+  .Btnbg{
+    height: 7vh;
+    width: 6vh;
   }
 }
